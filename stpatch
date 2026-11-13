@@ -1,0 +1,40 @@
+diff --git a/config.def.h b/config.def.h
+index 2cd740a..4716c4e 100644
+--- a/config.def.h
++++ b/config.def.h
+@@ -5,7 +5,7 @@
+  *
+  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
+  */
+-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
++static char *font = "monospace:pixelsize=18:antialias=true:autohint=true";
+ static int borderpx = 2;
+ 
+ /*
+@@ -45,7 +45,7 @@ int allowaltscreen = 1;
+ 
+ /* allow certain non-interactive (insecure) window operations such as:
+    setting the clipboard text */
+-int allowwindowops = 0;
++int allowwindowops = 1;
+ 
+ /*
+  * draw latency range in ms - from new content/keypress/etc until drawing.
+@@ -74,7 +74,7 @@ static unsigned int cursorthickness = 2;
+ static int bellvolume = 0;
+ 
+ /* default TERM value */
+-char *termname = "st-256color";
++char *termname = "xterm-256color";
+ 
+ /*
+  * spaces per tab
+@@ -121,7 +121,7 @@ static const char *colorname[] = {
+ 	"#cccccc",
+ 	"#555555",
+ 	"gray90", /* default foreground colour */
+-	"black", /* default background colour */
++	"#171717", /* default background colour */
+ };
+ 
+ 
