@@ -4,7 +4,8 @@ setup-xorg-base
 
 apk add build-base libx11-dev libxft-dev libxinerama-dev linux-headers ncurses
 apk add font-noto xclip maim brightnessctl pulseaudio pulseaudio-utils 
-# apk add util-linux tmux setxkbmap xrandr redshift firefox emacs-x11 zathura zathura-pdf-mupdf texlive nmap
+# apk add util-linux tmux setxkbmap xrandr redshift texlive nmap xev
+# apk add firefox emacs-x11 zathura zathura-pdf-mupdf anki
 
 mkdir -p /etc/X11/xorg.conf.d
 mv 40-libinput.conf /etc/X11/xorg.conf.d/
